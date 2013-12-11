@@ -6,57 +6,319 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Stylish Portfolio Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <style>
-	body {margin-top: 60px;}
-    </style>
-
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+	.textborder
+	{
+	color:#073A57;
+	text-shadow: 5px 0 5px #fff;
+	}	
+	.black
+	{
+	color:#000;
+	}
+	
+	.hrcolor
+	{
+	background-color: #A1B901; height: 2px; border: 0;
+	}
+	.buttonbordercolor:hover
+	{
+	border-color:#A1B901;
+	}
+	.buttonbordercolor
+	{
+	border-color:#A1B901;
+	}
+	h4
+	{
+	color:#A1B901;
+	text-shadow: 0 0 1px #fff;
+	}		
+	</style>
   </head>
 
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.php">Start Bootstrap</a>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="http://startbootstrap.com">Privatlægevagten</a></li>
+        <li><a href="#top">Home</a></li>     
+        <li><a href="#services">Services</a></li>
+        <li><a href="#callout">Privatlægevagten</a></li>
+        <li><a href="#prices">Abonnement og priser</a></li>
+		<li><a href="#Consultation">Book en konsultation</a></li>
+		<li><a href="#Terms">Abonnementbetingelser og vilkår</a></li>
+		<li><a href="#Behind">Bagom Privatlægevagten</a></li>
+		
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">	
+      <div class="vert-text" >
+	  <div >
+        <h1 class="textborder">Privatlægevagten</h1>
+        <h3 style="color:#A1B901 ;text-shadow: 2px 0 2px #000;">Velkommen til Privatlægevagten, vi har åbent 18-08.
+Kontakt Privatlægevagten, se her
+</h3>
+</div>
+        <a href="#Consultation" class="btn btn-default btn-lg buttonbordercolor">Book en konsultation</a>
+		<a href="https://docs.google.com/forms/d/1PyGnF77rpeRs5EUG-LqhhiVUAieYHjsHQy2w2UXyvEU" class="btn btn-default btn-lg buttonbordercolor">Sign Up</a>
+      </div>
+	  
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Services -->
+    <div id="services" class="services" style="background-color:#DAE9F0;color:#000">
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Kort om fordele og info om Privatlægevagten:</h2>
+            <hr class="hrcolor">
+          </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>A better Bootstrap starter template.</h1>
-          <p>Complete with pre-defined file paths that you won't have to change!</p>
+		<div style="color:#A1B901">
+        <div class="row" style="color:#000">
+          <div class="col-md-2 col-md-offset-1 text-center">
+            <div class="service-item" >  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>          
+              <h4>1.Altid direkte kontakt til en læge</h4>          
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>            
+              <h4>2.Undgå skadestuen i mange tilfælde</h4>           
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>             
+              <h4>3.Mulighed for videokonsultation</h4> 
+               <a href="#callout" class="btn btn-default btn-lg buttonbordercolor">Læs mere her</a>			  
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>             
+              <h4>4.Danks autoriserede læger</h4>            
+            </div>
+          </div>
+		      <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>           
+              <h4>5.Kan også henvise til skadestuen og udskrive recepter</h4>            
+            </div>
+          </div>	  
         </div>
+		</div>
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout" id="callout">
+   <div class="col-md-6 col-md-offset-3 text-center" style="margin-top:5%">
+  <div class="panel panel-info" style="color:#000" >
+  <h3>Om Privatlægevagten</h2>
+  <div class="panel-body" >
+   Privatlægevagten er et alternativ til den ordinære lægevagt, men hos os kommer du altid direkte i kontakt med en læge. Alle vores læger er dansk autoriserede og har de samme beføjelser som alle andre læger. Det vil sige vores læger både kan henvise til skadestuen og udskrive recepter. Ydermere har du hos os mulighed for en videokonsultation, så lægen kan se nærmere på problemet. 
+Du har altid mulighed for at ringe til os indenfor åbningstiden 18-08, men det er en fordel at tegne et abonnement da konsultationerne derved bliver billigere.
+ <p><a href="#portfolio" class="btn btn-default btn-lg buttonbordercolor" style="margin-top:10px;">Læs mere here</a></p>
+  </div>
+</div>
+          </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio" style="background-color:#DAE9F0">         
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Sådan gør du, trin for trin:</h2>
+            <hr class="hrcolor">
+          </div>
+        </div>
+		<div >
+        <div class="row" style="color:#000">
+          <div class="col-md-2 col-md-offset-0 text-center">
+            <div class="service-item " >  <i class="service-icon fa fa-magnet"  style="border-color:#000;"></i>       
+              <h4>1.Valgfrit</h4>  
+              <p>Tegn et abonnement </p>
+              <a href="#prices" class="btn btn-default btn-lg buttonbordercolor" style="font-size:10pt;">Abonnement og priser</a>		  
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>        
+              <h4>2.Anmod om en konsultation</h4>    
+             <p>Ring og læg en besked eller send en email</p>			  
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>         
+              <h4>3.Svar</h4> 
+             <p>En læge vil nu ringe dig op. (kan vi skrive her et estimat af tid? eller må det kun stå i t&c)</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>         
+              <h4>4.Konsultation</h4>  
+          <p>Konsultationen vil nu foregå på samme måde som en almindelig konsultation med samtale og spørgsmål. Evt. vil i starte en videokonsultation hvis problemet er synligt. </p>			  
+            </div>
+          </div>
+		      <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>      
+              <h4>5.Næste skridt</h4>   
+              <p> Lægen vil nu give dig råd og vejledning i hvad du bør gøre ved problemet, dette kan også betyde at du bliver sendt på skadestuen eller får udskrevet en recept.</p>			  
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">  <i class="service-icon fa fa-magnet" style="border-color:#000;"></i>      
+              <h4>6.Betaling</h4>   
+              <p>Du vil modtage en faktura via email.</p>			  
+            </div>
+          </div>	  		  
+        </div>
+		</div>
       </div>
 
-    </div><!-- /.container -->
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Prices -->
+    <div id="prices" class="map" style="background-color:#F6F7F9">   
+    <div class="container" >
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Abonnement og priser</h2>
+            <hr class="hrcolor">
+			<h3 style="color:#A1B901 ;text-shadow: 0 0 1px #000;">Du har altid mulighed for at kontakte Privatlægevagten, men med et abonnement bliver konsultationerne billigere og har tjent sig selv hjem allerede ved anden konsultation. </h4>
+			 <table class="table table table-condensed" style="font-size:15pt">
+          <th></th> <th> Abonnementpris</th> <th>Konsultationspris</th>
+		  <tr><td>Uden abonnement</td><td> 0 kr</td><td>349 kr</td></tr>
+		  <tr><td>1 års abonnement enkelt person</td><td>99 kr</td><td>249 kr</td></tr>
+		  <tr><td>1 års abonnement familie</td><td>199 kr</td><td>249 kr</td></tr>
+        </table>
+		 <a href="#about" class="btn btn-default btn-lg buttonbordercolor">Tilmeld dig Privatlægevagten </a>
+		  <a href="#Terms" class="btn btn-default btn-lg buttonbordercolor">Læs vores betingelser her</a>
+		
+          </div>
+		 
+        </div>	
+		</div>
+    </div>
+    <!-- /Prices -->
+    
+	<div id="Consultation" class="map" style="margin-top:50px;">   
+    <div class="container" >
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Book en konsultation</h2>
+            <hr class="hrcolor">
+			<h5>
+			Ønsker du en konsultation kan du kontakte os per tlf xxxxxxxx  og lægge en besked eller sende en email til xxxx@mediaxes.com.
+En læge vil derefter ringe dig op. Se trin for trin her (link to "om privatlægevagten").
+
+			</h5>	
+		 <a href="#callout" class="btn btn-default btn-lg buttonbordercolor">Om privatlægevagten</a>	
+		
+          </div>
+		 
+        </div>	
+		        <div class="row" id="Terms" style="margin-top:50px;">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Abonnementbetingelser og vilkår</h2>
+            <hr class="hrcolor">
+			<h5>
+			</h5>					
+          </div>
+		 
+        </div>
+		</div>
+    </div>
+	
+
+	
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+	  <div id="Behind" >   
+        <div class="row" style="background-color:#F6F7F9;border-radius:20px;>
+				   
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Bagom Privatlægevagten</h2>
+            <hr class="hrcolor">
+			<h5>
+Det danske firma Mediaxes A/S står bag Privatlægevagten. 
+Mediaxes har siden 2006 leveret professionelle lægetjenester til forsikringsselskaber, kommuner og private virksomheder og har erfaring fra over 30.000 konsultationer. 
+Se mere på www.mediaxes.com (link)
+Du kan kontakte Privatlægevagten med spørgsmål eller kommentarer (du kan ikke booke en konsultation med denne email) ved at sende en email til: xxx@xxx.dk
+			</h5>	
+
+          </div>
+		 
+        </div>	
+		</div>
+
+	
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <hr>
+            <p>Mediaxes A/S • Flaesketorvet 68, 1 • 1711 Copenhagen V • Phone +45 29 44 74 48 • info@mytraveldoc.com • CVR: 32 83 94 95 • Mytraveldoc.com • © 2013
+Provided by:</p>
+<img src="https://mytraveldoc.com/wp-content/themes/mytraveldoc/images/mediaxes_logo_mod_185.png" style="border-radius:10px">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
 
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+	 
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
   </body>
+
 </html>
